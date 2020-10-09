@@ -10,7 +10,7 @@
   * [Tests](#tests)
   * [Demo](#demo)
   * [License](#license)
-  * [Contributing](#contributers)
+  * [Contributers](#contributers)
   * [Questions](#questions)
 
 ## Installation
