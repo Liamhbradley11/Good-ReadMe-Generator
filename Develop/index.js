@@ -70,6 +70,7 @@ function generateReadMe(response){
 ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Tests](#tests)
   * [License](#license)
   * [Contributing](#contributers)
   * [Questions](#questions)
@@ -80,8 +81,11 @@ function generateReadMe(response){
   ## Usage
     ${response.usage}
 
+  ## Tests
+  ${response.tests}
+
   ## License
-  Licensed under the ${getLicense(response.license)};
+   ${getLicense(response.license)};
 
   ## Contributers
     ${response.contributers}
