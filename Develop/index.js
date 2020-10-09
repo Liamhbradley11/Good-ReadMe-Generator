@@ -2,11 +2,11 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 
-const writeFileAsync = util.promisify(fs.writefile);
-const generateMarkdown = require("./utils/generateMarkdown");
+
+const writeFileAsync = util.promisify(fs.writeFile);
 
 
-function promptUser(){
+function promptUser() {
   return inquirer.prompt([
     {
       type: "input",
@@ -30,7 +30,7 @@ function promptUser(){
     },
     {
       type: "input",
-      message: "How do you use your application?",
+      message: "Information to use your application?",
       name: "usage"
     },
     {
@@ -48,21 +48,43 @@ function promptUser(){
       message: "What is your email?",
       name: "email"
     },
-
-
   ]);
-
-
-
-
-function writeFile(file, data) {
-  fs.writeFile(file, data, err => {
-    if (err) throw err }) 
 }
 
-// function init() {
+function gerenateReadMe(response){
+  return ` 
 
-// }
+# ${response.project}
 
-// init();
-// console.log(questions)
+### ${response.description}
+
+## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributers)
+  * [Questions](#questions)
+
+## Installation
+  ${response.install}
+
+  ## Usage
+    ${response.usage}
+
+  ## License
+  Licensed under the ${response.license} license.
+
+  ## Contributers
+    ${response.contributers}
+
+  ## Questions
+  Please contact me at <${response.email}>. You can also find more of my work at [${response.username}](https://github.com/${response.username}).
+  `;
+}
+
+promptUser()
+.then
+
+
+
+init();
