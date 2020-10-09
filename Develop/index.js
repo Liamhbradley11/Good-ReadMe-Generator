@@ -35,6 +35,11 @@ function promptUser() {
     },
     {
       type: "input",
+      message: "What tests do you need to run?",
+      name: "tests"
+    },
+    {
+      type: "input",
       message: "What license would you use?",
       name: "license"
     },
@@ -49,6 +54,10 @@ function promptUser() {
       name: "email"
     },
   ]);
+}
+
+function getLicense(license){
+  return `[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)`
 }
 
 function generateReadMe(response){
@@ -66,13 +75,13 @@ function generateReadMe(response){
   * [Questions](#questions)
 
 ## Installation
-  ${response.install}
+  ${response.installation}
 
   ## Usage
     ${response.usage}
 
   ## License
-  Licensed under the ${response.license} license.
+  Licensed under the ${getLicense(response.license)};
 
   ## Contributers
     ${response.contributers}
