@@ -1,6 +1,6 @@
 # GoodReadMe
 
-## This project is a README.md generator.  Through a series of a few prompted questions the user will be able to input their information to create a READMEmd file attached to their own project.
+* This project is a README.md generator.  Through a series of a few prompted questions the user will be able to input their information to create a READMEmd file attached to their own project.
 
 ## Table of Contents
   * [Installation](#installation)
