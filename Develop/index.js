@@ -51,7 +51,7 @@ function promptUser() {
   ]);
 }
 
-function gerenateReadMe(response){
+function generateReadMe(response){
   return ` 
 
 # ${response.project}
@@ -82,8 +82,20 @@ function gerenateReadMe(response){
   `;
 }
 
-promptUser()
-.then
+
+async function init() {
+  try {
+    const response = await promptUser();
+    const page = generateReadMe(response);
+
+    await writeFileAsync("README.md", page);
+
+    console.log("Generating README.md");
+  } catch(err) {
+    console.log(err);
+  };
+}
+
 
 
 
