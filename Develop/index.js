@@ -5,6 +5,7 @@ const util = require("util");
 const writeFileAsync = util.promisify(fs.writefile);
 const generateMarkdown = require("./utils/generateMarkdown");
 
+
 function promptUser(){
   return inquirer.prompt([
     {
@@ -29,50 +30,39 @@ function promptUser(){
     },
     {
       type: "input",
-      message: "What is the name of your project?",
-      name: "project"
+      message: "How do you use your application?",
+      name: "usage"
     },
     {
       type: "input",
-      message: "What is the name of your project?",
-      name: "project"
+      message: "What license would you use?",
+      name: "license"
     },
-  ]
+    {
+      type: "input",
+      message: "Are there any other contributers?",
+      name: "contributers"
+    },
+    {
+      type: "input",
+      message: "What is your email?",
+      name: "email"
+    },
 
 
-// inquirer
-//   .prompt(questions)
-   
-//   .then(function(response) {
-//     console.log(response)
-
-//     console.log(generateMarkdown(response))
-
-    // if (response.confirm === response.password) {
-    //   console.log("Success!");
-    // }
-    // else {
-    //   console.log("You forgot your password already?!");
-    // }
-  });
+  ]);
 
 
 
 
-
-
-
-
-// const questions = [
-
-
-
-function writeToFile(fileName, data) {
+function writeFile(file, data) {
+  fs.writeFile(file, data, err => {
+    if (err) throw err }) 
 }
 
-function init() {
+// function init() {
 
-}
+// }
 
-init();
+// init();
 // console.log(questions)
