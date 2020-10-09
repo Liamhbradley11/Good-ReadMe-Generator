@@ -7,8 +7,8 @@
 ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Tests](#tests)
   * [License](#license)
-  * [Tests](#test)
   * [Contributing](#contributers)
   * [Questions](#questions)
 
@@ -20,6 +20,10 @@
 
   ## Test
     node index.js
+
+  ## Code Snippet
+  * ![alt text](https://i.paste.pics/514988c034be3a33c05a19d854508497.png)
+
   ## License
   [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
