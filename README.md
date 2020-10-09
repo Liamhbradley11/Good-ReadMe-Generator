@@ -8,6 +8,7 @@
   * [Installation](#installation)
   * [Usage](#usage)
   * [Tests](#tests)
+  * [Demo](#demo)
   * [License](#license)
   * [Contributing](#contributers)
   * [Questions](#questions)
@@ -24,7 +25,7 @@
   ## Code Snippet
   ![alt text](https://i.paste.pics/514988c034be3a33c05a19d854508497.png)
 
-  ## Live Demo
+  ## Demo
   Click [HERE](https://drive.google.com/file/d/1UDz0z_IrK7chqWFQ03-HE-GrzdMkOOpK/view) for a video tutorial of the application.
 
   ## License
